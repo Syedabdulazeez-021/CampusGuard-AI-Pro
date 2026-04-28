@@ -10,6 +10,7 @@ app = Flask(__name__)
 app.secret_key = "campusguard_secret"
 
 UPLOAD_FOLDER = "uploads"
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
 client = Groq(
