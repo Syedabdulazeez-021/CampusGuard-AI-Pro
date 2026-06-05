@@ -225,7 +225,7 @@ Paste any headline or article and receive:
 
 # 👨‍💻 Developer
 
-**Abdul Azeez**
+**Abdul Azeez Syed**
 
 AI-Powered Student Productivity & Information Verification Platform
 
