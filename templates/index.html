@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CampusGuard AI Pro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎓 CampusGuard AI Pro</h1>
+
+    <div class="nav-buttons">
+
+        <a href="/">
+            <button>🎓 Academic Agent</button>
+        </a>
+
+        <a href="/news">
+            <button>📰 NewsGuard AI</button>
+        </a>
+
+    </div>
+
+    <p class="subtitle">
+        Agentic Academic Intelligence Platform
+    </p>
+
+    <!-- Dashboard -->
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>🎓 Academic Agent</h3>
+            <p>
+                Analyzes academic notices, extracts dates,
+                identifies risks, and generates study plans.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📰 News Agent</h3>
+            <p>
+                Evaluates news credibility, detects misinformation,
+                and provides trust scores.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Upload Notice -->
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="pdf" required>
+
+        <button type="submit">
+            📄 Analyze Notice
+        </button>
+
+    </form>
+
+    {% if result %}
+
+    <div class="result">
+
+        <h2>📋 Analysis Result</h2>
+
+        <pre>{{ result }}</pre>
+
+    </div>
+
+    {% endif %}
+
+    <hr>
+
+    <!-- AI Assistant -->
+
+    <h2>🤖 Ask CampusGuard AI</h2>
+
+    <form action="/ask" method="POST">
+
+        <input
+            type="text"
+            name="question"
+            placeholder="Ask something about the uploaded notice..."
+            style="width:70%;padding:12px;"
+            required
+        >
+
+        <button type="submit">
+            Ask AI
+        </button>
+
+    </form>
+
+    <br>
+
+    <!-- Study Plan -->
+
+    <form action="/studyplan" method="POST">
+
+        <button type="submit">
+            📚 Generate Study Plan
+        </button>
+
+    </form>
+
+    {% if answer %}
+
+    <div class="result">
+
+        <h2>💬 AI Response</h2>
+
+        <pre>{{ answer }}</pre>
+
+    </div>
+
+    {% endif %}
+
+    <hr>
+
+    <!-- Features -->
+
+    <div class="features">
+
+        <h2>🚀 Platform Features</h2>
+
+        <ul>
+            <li>📄 Smart Notice Analysis</li>
+            <li>📅 Important Date Extraction</li>
+            <li>⚠ Risk Alert Detection</li>
+            <li>🎯 Student Readiness Score</li>
+            <li>✅ Action Item Generation</li>
+            <li>📖 Study Recommendations</li>
+            <li>🤖 AI Academic Assistant</li>
+            <li>📚 Personalized Study Planner</li>
+            <li>📰 News Credibility Analysis</li>
+            <li>🔍 Fake News Detection</li>
+            <li>📊 Trust Score Generation</li>
+        </ul>
+
+    </div>
+
+</div>
+
+</body>
+</html>

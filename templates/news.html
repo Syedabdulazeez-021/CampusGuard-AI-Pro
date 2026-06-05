@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NewsGuard AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📰 NewsGuard AI</h1>
+
+    <p class="subtitle">
+        AI-Powered News Credibility Analyzer
+    </p>
+
+    <a href="/">
+        <button>🎓 Back to CampusGuard</button>
+    </a>
+
+    <br><br>
+
+    <form action="/analyze_news" method="POST">
+
+        <textarea
+            name="news_text"
+            rows="10"
+            style="width:100%;padding:15px;"
+            placeholder="Paste a news headline or article..."
+            required
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">
+            🔍 Analyze News
+        </button>
+
+    </form>
+
+    {% if result %}
+
+    <div class="result">
+
+        <h2>📰 News Analysis</h2>
+
+        <pre>{{ result }}</pre>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
