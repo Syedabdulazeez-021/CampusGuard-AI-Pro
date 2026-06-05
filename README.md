@@ -2,23 +2,92 @@
 
 ## AI-Powered Multi-Agent Platform for Academic Assistance and News Verification
 
-CampusGuard AI Pro is an intelligent multi-agent platform designed to help students manage academic information and verify news credibility using Generative AI.
+CampusGuard AI Pro is an intelligent multi-agent platform designed to help students manage academic information efficiently while also verifying the credibility of online news content.
 
-The platform transforms academic notices into actionable insights, personalized study plans, and interactive academic assistance while also providing AI-powered news credibility analysis.
+Built using Flask, Groq LLM, and Llama 3.3 70B, the platform combines academic notice analysis, personalized study planning, and AI-powered news credibility detection into a single system.
 
 ---
 
-## 🏆 Project Highlights
+## 🚀 Key Features
 
-* Multi-Agent AI Architecture
-* Academic Notice Intelligence
-* Student Readiness Scoring
-* Personalized Study Planning
-* AI Academic Assistant
-* News Credibility Verification
-* Trust Score Generation
-* Risk Alert Detection
-* Built with Groq + Llama 3.3 70B
+### 🎓 Academic Agent
+
+The Academic Agent helps students stay organized and prepared by:
+
+* 📄 Analyzing academic notices automatically
+* 📅 Extracting important dates and deadlines
+* ⚠️ Detecting academic risks and alerts
+* 🎯 Generating student readiness scores
+* ✅ Creating action-item checklists
+* 🤖 Answering questions about uploaded notices
+* 📚 Generating personalized study plans
+* 📖 Providing study recommendations
+
+---
+
+### 📰 NewsGuard AI
+
+The NewsGuard Agent helps users identify potentially misleading information by:
+
+* 📰 Analyzing news headlines and articles
+* 🎯 Generating credibility/trust scores
+* ⚠️ Detecting misinformation indicators
+* 🔍 Identifying red flags in news content
+* ✅ Providing final credibility verdicts
+* 📌 Recommending fact-checking actions
+* 🌐 Suggesting trusted verification sources
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+
+* HTML5
+* CSS3
+
+### Backend
+
+* Python
+* Flask
+
+### Artificial Intelligence
+
+* Groq API
+* Llama 3.3 70B Versatile
+
+### Document Processing
+
+* PyPDF
+
+---
+
+## 📂 Project Structure
+
+```text
+fake-news-detector/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+│
+├── templates/
+│   ├── index.html
+│   └── news.html
+│
+├── static/
+│   └── style.css
+│
+├── screenshots/
+│   ├── home.png
+│   ├── analysis.png
+│   ├── ask_ai.png
+│   ├── study_plan_result.png
+│   └── NewsGuardResult.png
+│
+└── uploads/
+```
 
 ---
 
@@ -32,130 +101,28 @@ The platform transforms academic notices into actionable insights, personalized 
 
 ![Analysis](screenshots/analysis.png)
 
-### Ask CampusGuard AI
+### Personalized Study Plan
 
-![CampusGuard AI](screenshots/ask-campusguard.png)
-
-### NewsGuard AI
-
-![NewsGuard](screenshots/newsguard.png)
-
----
-
-## 📌 Overview
-
-CampusGuard AI Pro consists of two intelligent AI agents:
-
-### 🎓 Academic Agent
-
-Analyzes academic notices and helps students stay organized by:
-
-* Extracting important dates
-* Identifying deadlines
-* Detecting risks
-* Generating action items
-* Providing readiness scores
-* Creating personalized study plans
-* Answering student questions
-
-### 📰 NewsGuard AI
-
-Analyzes news articles and headlines by:
-
-* Evaluating credibility
-* Detecting misinformation risks
-* Identifying red flags
-* Generating trust scores
-* Providing verification recommendations
-
----
-
-## 🚀 Features
-
-### Academic Agent
-
-* 📄 Smart Notice Analysis
-* 📅 Important Date Extraction
-* ⚠ Risk Alert Detection
-* 🎯 Student Readiness Score
-* ✅ Action Item Generation
-* 🤖 Academic Question Answering
-* 📚 Personalized Study Planner
-* 📖 Study Recommendations
+![Study Plan](screenshots/study_plan_result.png)
 
 ### NewsGuard AI
 
-* 📰 News Credibility Analysis
-* 🎯 Trust Score Generation
-* ⚠ Risk Level Detection
-* 🔍 Red Flag Identification
-* ✅ Final Verdict Classification
-* 📌 Fact-Check Recommendations
-* 🌐 Reliable Verification Sources
+![NewsGuard](screenshots/NewsGuardResult.png)
+
+### AI Academic Assistant
+
+![CampusGuard AI](screenshots/ask_ai.png)
 
 ---
 
-## 🛠 Technology Stack
-
-### Frontend
-
-* HTML
-* CSS
-
-### Backend
-
-* Python
-* Flask
-
-### AI & LLM
-
-* Groq API
-* Llama 3.3 70B Versatile
-
-### Document Processing
-
-* PyPDF
-
-### Version Control
-
-* Git
-* GitHub
-
----
-
-## 📂 Project Structure
-
-```text
-fake-news-detector/
-│
-├── app.py
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── static/
-│   └── style.css
-│
-├── templates/
-│   ├── index.html
-│   └── news.html
-│
-├── screenshots/
-│   ├── home.png
-│   ├── analysis.png
-│   ├── ask-campusguard.png
-│   └── newsguard.png
-│
-└── uploads/
-```
-
-## ⚙ Installation
+## ⚙️ Installation
 
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
-cd fake-news-detector
+git clone https://github.com/Syedabdulazeez-021/CampusGuard-AI-Pro.git
+
+cd CampusGuard-AI-Pro
 ```
 
 ### Install Dependencies
@@ -164,7 +131,7 @@ cd fake-news-detector
 pip install -r requirements.txt
 ```
 
-### Configure Environment Variables
+### Create Environment File
 
 Create a `.env` file:
 
@@ -190,44 +157,44 @@ http://127.0.0.1:5000
 
 ### Academic Notice Analysis
 
-Upload a college notice PDF and automatically receive:
+Students can upload official college notices and automatically obtain:
 
-* Executive Summary
-* Important Dates
+* Executive summaries
+* Important dates
 * Deadlines
-* Risk Alerts
-* Action Items
-* Readiness Score
+* Risk alerts
+* Action items
+* Readiness scores
 
 ### AI Academic Assistant
 
-Ask questions directly about uploaded academic notices.
+Students can ask questions related to uploaded notices and receive intelligent responses.
 
 ### Personalized Study Planning
 
-Generate customized study plans based on examination schedules and academic notices.
+The system generates customized study schedules based on examination information and deadlines.
 
-### News Verification
+### News Credibility Verification
 
-Analyze news articles and headlines for:
+Users can paste news articles or headlines and receive:
 
-* Trust Scores
-* Risk Analysis
-* Credibility Assessment
-* Fact-Check Suggestions
+* Trust score
+* Risk assessment
+* Credibility analysis
+* Fact-check recommendations
+* Verification resources
 
 ---
 
 ## 🔮 Future Enhancements
 
-* OCR Support for Image Notices
-* Calendar Integration
-* Automatic Reminder System
-* WhatsApp Notifications
-* Multi-Language Support
-* Real-Time Fact Verification APIs
-* Mobile Application
-* Placement Notice Intelligence
+* OCR support for scanned notices
+* Calendar integration
+* Automated reminder system
+* Multi-language support
+* Real-time fact-check APIs
+* Mobile application
+* Student performance analytics
 
 ---
 
@@ -235,4 +202,6 @@ Analyze news articles and headlines for:
 
 **Abdul Azeez**
 
-CampusGuard AI Pro – Empowering Students Through AI-Driven Academic Intelligence and Information Verification.
+AI-Powered Student Productivity and Information Verification Platform
+
+Built using Flask + Groq + Llama 3.3 70B
