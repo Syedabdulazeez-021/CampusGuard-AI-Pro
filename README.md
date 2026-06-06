@@ -1,5 +1,11 @@
 # 🎓 CampusGuard AI Pro
 
+## 🌐 Live Demo
+
+https://campusguard-ai-pro.onrender.com
+
+## AI-Powered Multi-Agent Platform for Academic Assistance and News Verification
+
 ## AI-Powered Multi-Agent Platform for Academic Assistance and News Verification
 
 CampusGuard AI Pro is an intelligent multi-agent platform designed to help students manage academic information, improve productivity, and identify potentially misleading information through responsible AI.
