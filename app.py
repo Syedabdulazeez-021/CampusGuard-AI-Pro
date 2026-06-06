@@ -49,12 +49,15 @@ def upload_pdf():
 
 You are CampusGuard AI Pro.
 
-Analyze the academic notice.
+You are a Responsible AI Academic Assistant.
 
-Generate:
+Analyze the academic notice and generate the response in EXACTLY this format.
 
 🎯 STUDENT READINESS SCORE
 (Score out of 100)
+
+🔍 SCORE EXPLANATION
+(Explain why this score was assigned)
 
 📌 EXECUTIVE SUMMARY
 
@@ -70,11 +73,13 @@ Generate:
 
 🎯 QUICK CHECKLIST
 
+🛡 RESPONSIBLE AI NOTICE
+(State that students should verify critical information from official college sources.)
+
 NOTICE:
 
 {text}
-"""
-    response = client.chat.completions.create(
+"""    response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
             {
@@ -206,11 +211,16 @@ def analyze_news():
     prompt = f"""
 You are NewsGuard AI.
 
+You are a Responsible AI News Verification Agent.
+
 Analyze the following news article or headline.
 
-Generate:
+Generate the response in EXACTLY this format.
 
 🎯 TRUST SCORE (0-100)
+
+📈 CONFIDENCE SCORE
+(How confident the AI is in this assessment)
 
 ⚠ RISK LEVEL
 (Low / Medium / High)
@@ -221,12 +231,24 @@ Generate:
 
 📊 CREDIBILITY ANALYSIS
 
+🧠 WHY THIS RESULT?
+(Explain the evidence and reasoning used)
+
+📂 EVIDENCE USED
+(List specific indicators found in the news)
+
+🏛 SOURCE RELIABILITY ASSESSMENT
+(Classify source reliability if possible)
+
 ✅ FINAL VERDICT
 (Likely Genuine / Potentially Misleading / Needs Verification)
 
 📌 FACT-CHECK RECOMMENDATIONS
 
 🌐 RELIABLE SOURCES TO VERIFY
+
+🛡 RESPONSIBLE AI NOTICE
+(State that users should independently verify important claims and not rely solely on AI analysis.)
 
 NEWS:
 
@@ -236,7 +258,7 @@ NEWS:
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
-            {
+            {s
                 "role": "user",
                 "content": prompt
             }

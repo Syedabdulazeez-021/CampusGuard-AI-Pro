@@ -54,15 +54,34 @@ Analyzes news articles and headlines by:
 
 * 📰 News Credibility Analysis
 * 🎯 Trust Score Generation
+* 📈 Confidence Score Generation
 * ⚠ Risk Level Detection
 * 🔍 Red Flag Identification
+* 📂 Evidence-Based Analysis
+* 🏛 Source Reliability Assessment
+* 🧠 Explainable AI Outputs
 * ✅ Final Verdict Classification
 * 📌 Fact-Check Recommendations
 * 🌐 Reliable Verification Sources
+* 🛡 Responsible AI Recommendations
 
 ---
 
 # 🌍 Real-World Impact
+
+# 🚀 Why CampusGuard AI Pro is Different
+
+Most student productivity tools only display information.
+
+CampusGuard AI Pro goes further by:
+
+* Converting academic notices into actionable insights
+* Generating personalized study plans
+* Explaining AI-generated recommendations
+* Helping users verify information instead of blindly trusting it
+* Encouraging responsible AI usage and critical thinking
+
+The platform is designed as a human-centered AI assistant that supports decision-making rather than replacing human judgment.
 
 ### Educational Support
 
@@ -83,6 +102,26 @@ Encourages fact-checking and critical thinking instead of blindly trusting AI-ge
 ---
 
 # 🛡 Responsible AI
+
+# 🔎 Trust & Explainability Features
+
+CampusGuard AI Pro emphasizes transparency and explainability.
+
+### Confidence Scores
+
+NewsGuard AI provides confidence indicators to communicate uncertainty rather than presenting conclusions as absolute facts.
+
+### Evidence-Based Analysis
+
+Every credibility assessment is supported by identifiable signals such as missing sources, sensational claims, or lack of supporting evidence.
+
+### Explainable Recommendations
+
+Student readiness scores and news credibility scores are accompanied by explanations to help users understand how conclusions were reached.
+
+### Human-Centered Design
+
+The system assists users in making informed decisions while keeping humans in control of final judgments.
 
 CampusGuard AI Pro follows responsible AI principles.
 
@@ -259,6 +298,20 @@ Paste any headline or article and receive:
 ---
 
 # 🎯 Mozilla.ai Alignment
+
+# 🌐 Social Impact
+
+CampusGuard AI Pro addresses two common challenges faced by students:
+
+### Academic Information Overload
+
+Students often struggle to interpret lengthy academic notices and track multiple deadlines. CampusGuard AI Pro transforms notices into concise, actionable insights.
+
+### Information Trust
+
+Students are increasingly exposed to misinformation online. NewsGuard AI encourages verification, critical thinking, and responsible consumption of information.
+
+By combining academic assistance with information verification, the platform promotes informed and responsible decision-making.
 
 CampusGuard AI Pro aligns with Mozilla.ai principles by promoting:
 
