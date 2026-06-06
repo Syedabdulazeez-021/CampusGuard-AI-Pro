@@ -221,6 +221,10 @@ CampusGuard-AI-Pro/
 
 ![AI Academic Assistant](screenshots/ask_ai.jpeg)
 
+## 🛡 Responsible AI & Explainability
+
+![Mozilla AI Features](screenshots/mozilla_ai_features.jpeg)
+
 ---
 
 # ⚙️ Installation

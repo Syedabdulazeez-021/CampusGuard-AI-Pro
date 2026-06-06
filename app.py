@@ -46,7 +46,6 @@ def upload_pdf():
     session["notice_text"] = text
 
     prompt = f"""
-
 You are CampusGuard AI Pro.
 
 You are a Responsible AI Academic Assistant.
@@ -79,7 +78,9 @@ Analyze the academic notice and generate the response in EXACTLY this format.
 NOTICE:
 
 {text}
-"""    response = client.chat.completions.create(
+"""
+
+    response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
             {
@@ -258,7 +259,7 @@ NEWS:
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
-            {s
+            {
                 "role": "user",
                 "content": prompt
             }
